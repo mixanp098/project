@@ -1,0 +1,1149 @@
+@font-face {
+	src: url("mbfont.ttf");
+	font-family: "mbfont";
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "mbfont";   
+}
+
+#logonav {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+#mblogo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navitem a {
+    color: white;
+    font-size: 17px;
+}
+
+.navitem a:hover{
+    background-color: #d9252b;
+    color: white;
+    transform: skewX(-25deg);
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.activepage {
+    background-color: #d9252b;
+    color: white;
+    transform: skewX(-25deg);
+}
+
+.droptext a {
+    text-align: center;
+    color: black;
+    font-size: 19px;
+}
+
+.droptext a:hover {
+    background-color: #d9252b;
+    color: white;
+    transform: skewX(0deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#slide1 {
+    height: 660px;
+    background-image: url(../img/homeclassic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide2 {
+    height: 660px;
+    background-image: url(../img/homeamg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide3 {
+    height: 660px;
+    background-image: url(../img/homebrabus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slideshow li {
+    background-color: #d9252b;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 3vmin;
+    height: 3vmin;
+    background: transparent;
+    border-top: 1vmin solid white;
+    border-right: 1vmin solid white;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+}
+.arrow.left {
+    left: 40%;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+.arrow.right {
+    right: 40%;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+.arrow:hover {
+    border-color: #d9252b;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+.arrow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}
+
+#homeabouttitle {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#abouttext {
+    padding: 60px 0;
+}
+
+#partnerpart {
+    background-color: black;
+}
+
+#partnership {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid white;
+    border-image-source: linear-gradient(to right, black 20%, white, black 80%); 
+    border-image-slice: 5;
+}
+
+#partnership h2 {
+    color: white;
+}
+
+#partnerlogo {
+    padding: 70px 0;
+}
+
+.partnertext p {
+    color: white;
+}
+
+.partnertext {
+    padding: 70px 50px;
+}
+
+#future {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#future h2 {
+    color: black;
+}
+
+.futurecar a {
+    color: white;
+}
+
+.futurecarpart {
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.futurecar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.futurecar:hover {
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+#stayintouchpart {
+    background-color: black;
+}
+
+#stayintouch {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid white;
+    border-image-source: linear-gradient(to right, black 20%, white, black 80%); 
+    border-image-slice: 5;
+}
+#stayintouch h2 {
+    color: white;
+}
+
+#email {
+    color: white;
+}
+
+#email a {
+    text-decoration: none;
+}
+
+.emailbox {
+    padding: 60px 0;
+}
+
+.formStyle { 
+    background-color: black;
+    padding: 20px; 
+    width: 400px; 
+    margin-bottom: 20px; 
+    border: 1px solid white; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    font-size: 1em;
+    font-weight: 100;
+    color: white;
+}
+  
+.formButton {
+    background-color:white;
+    display:inline-block;
+    color:black;
+    font-size:28px;
+    font-weight: 500;
+    padding:6px 24px;
+    margin-top: 30px;
+    margin-right: 60px;
+    text-decoration:none;
+}
+  
+.formButton:hover {
+    background-color: #d9252b;
+    color:#ffffff;
+    transform: skewX(-25deg);
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+  
+.formButton:active {
+    position:relative;
+    top:3px;
+}
+  
+input:focus {
+    outline: none;
+}
+  
+::-webkit-input-placeholder {
+     color: #ecf0f1;
+}
+
+#popup {
+    color: black;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social a {
+    color: white;
+}
+
+.social a:hover {
+    color: #d9252b;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+  
+#footer {
+    background-color: #070707;
+    padding-top: 70px;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer a:hover {
+    color: #d9252b;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+#copyright {
+    padding: 20px 0;
+    border-top: 1px solid white;
+    border-image-source: linear-gradient(to right, #070707 5%, white, #070707 95%); 
+    border-image-slice: 5;
+}
+
+/* Stock page */
+
+#slide4 {
+    height: 660px;
+    background-image: url(../img/stock1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide5 {
+    height: 660px;
+    background-image: url(../img/stock2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide6 {
+    height: 660px;
+    background-image: url(../img/stock3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrowdown:hover {
+    background-color: white;
+    border-radius: 50px;
+    color: #d9252b;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.slidecaption a {
+    color: white;
+}
+
+#whymbtext {
+    padding: 50px 0;
+    border-bottom: 1px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 5%, #d9252b, white 95%); 
+    border-image-slice: 5;
+}
+
+#whymb {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+.whyicon {
+    font-size: 35px;
+}
+
+.whymbp {
+    padding: 25px 0;
+}
+
+#allvehicles {
+    padding: 80px 0;
+}
+
+.classname {
+    padding: 80px 0 20px 0;
+    border-bottom: 1px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 40%, #d9252b, white 60%); 
+    border-image-slice: 5;
+}
+
+.classitem {
+    padding: 60px 35px 30px 35px;
+}
+
+.carimg {
+    padding: 30px 0;
+}
+
+.price {
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 10px;
+    letter-spacing: 3px;
+
+}
+
+.carinfo {
+    background-color: #e8e8e8;
+    padding: 5px 0;
+}
+
+.review {
+    margin: auto 0;
+}
+
+.review h6 {
+    color: white;
+    background-color: black;
+    padding: 15px 0;
+}
+
+.review a {
+    text-decoration: none;  
+}
+
+.review h6:hover {
+    background-color: #d9252b;
+    color:#ffffff;
+    transform: skewX(-25deg);
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.hovereffect {
+    width:100%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+    
+.hovereffect .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color:rgba(0,0,0,0.5);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+}
+    
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+    
+.hovereffect h2 {
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    font-size:17px;
+    background:rgba(0,0,0,0.6);
+    -webkit-transform:translatey(-100px);
+    -ms-transform:translatey(-100px);
+    transform:translatey(-100px);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    padding:10px;
+}
+    
+.hovereffect a.info {
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    color:#fff;
+    border:1px solid #fff;
+    background-color:transparent;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    margin:50px 0 0;
+    padding:7px 14px;
+}
+    
+.hovereffect a.info:hover {
+    box-shadow:0 0 5px #fff;
+}
+    
+.hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+    
+.hovereffect:hover .overlay {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+    
+.hovereffect:hover h2,.hovereffect:hover a.info {
+    opacity:1;
+    filter:alpha(opacity=100);
+    -ms-transform:translatey(0);
+    -webkit-transform:translatey(0);
+    transform:translatey(0);
+}
+    
+.hovereffect:hover a.info {
+    -webkit-transition-delay:.2s;
+    transition-delay:.2s;
+}
+
+#moremodels {
+    background-color: black;
+    color: white;
+}
+
+#othermodels {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, black 20%, white, black 80%); 
+    border-image-slice: 5;
+}
+
+#othermodels h2 {
+    color: white;
+}
+
+#amgbrb {
+    padding: 40px 0 90px 0;
+}
+
+
+/* AMG Page */
+
+
+#slide7 {
+    height: 660px;
+    background-image: url(../img/shooting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide8 {
+    height: 660px;
+    background-image: url(../img/gtfamily.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide9 {
+    height: 660px;
+    background-image: url(../img/enterier.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#whatamgdo {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#amgcomps {
+    padding: 50px 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 5%, #d9252b, white 95%); 
+    border-image-slice: 5;
+}
+
+#amgcomps h3 {
+    padding: 30px 0;
+}
+
+.mbfootertext a {
+    margin-left: 70px;
+}
+
+
+/* BRABUS Page */
+
+#slide10 {
+    height: 660px;
+    background-image: url(../img/brabusgphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide11 {
+    height: 660px;
+    background-image: url(../img/brabusphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#slide12 {
+    height: 660px;
+    background-image: url(../img/brabussphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#whoweare {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#aboutbrb p {
+    padding: 60px 150px;
+    line-height: 1.6;
+}
+
+.textbrb p {
+    padding: 15px 40px 0 0;
+    line-height: 1.7;
+}
+
+.brabustext {
+    padding: 60px 0;
+}
+
+#aboutbrball {
+    padding: 50px 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 5%, #d9252b, white 95%); 
+    border-image-slice: 5;
+}
+
+
+/* Contact Us Page */
+
+
+#coverimg{
+    height: 660px;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+}
+
+#contact {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#contactusinfo {
+    margin: 70px 0;
+}
+
+#contactlocation {
+    padding: 50px 0;
+}
+
+#location {
+    margin: 70px 0;
+}
+
+#contactsocial a {
+    color: black;
+}
+
+#contactsocial a:hover {
+    color: #d9252b;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+#otherlocations {
+    background-color: black;
+    color: white;
+}
+
+#othloc {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, black 20%, white, black 80%); 
+    border-image-slice: 5;
+}
+
+#ordervehicle {
+    padding: 30px 0;
+    margin: 60px 0;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+.card-header {
+    background-color: #d9252b;
+    color: white;
+}
+
+#orderbutton {
+    background-color: #d9252b;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #d9252b;
+}
+
+#orderbutton:hover {
+    background-color: white;
+    color: #d9252b;
+    border-color: #d9252b;
+    transition: all;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+
+/* Author Page */
+
+#nav {
+    padding: 6px 10%;
+    background-color: black;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+#nav a {
+    color: white;
+    font-size: 17px;
+}
+
+#navit {
+    padding-top: 27px;
+}
+
+#navit li {
+    color: white;
+    display: inline;
+    margin: 0px 10px;
+    
+}
+
+#coverdev {
+    height: 600px;
+    background-image: url(../img/coverdev.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    
+}
+
+#abtauthor {
+    padding: 30px 0;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    border-bottom: 3px solid #d9252b;
+    border-image-source: linear-gradient(to right, white 20%, #d9252b, white 80%); 
+    border-image-slice: 5;
+}
+
+#authorimg img {
+    width: 200px;
+}
+
+#authorinfo {
+    padding: 20px 0;
+}
+
+#contme {
+    margin: 65px 0;
+}
+
+#place input::placeholder {
+    color: black;
+}
+
+#place textarea::placeholder {
+    color: black;
+}
+
+#place button {
+    background-color: #d9252b;
+    margin-top: 10px;
+}
+
+#matfooter {
+    margin: 0px;
+}
+
+#matfooic a {
+    margin: 0px 15px;
+}
+
+#socauthor a {
+    margin: 0px 30px;
+    color: black;
+}
+
+
+/* Responsive */
+
+
+@media only screen and (max-width: 1199px){
+    #mblogo h2 {
+        font-size: 25px;
+    }
+    #contactpar {
+        margin-top: 23px;
+    }
+    .homeoneside {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 1237px){
+    #matlg h4 {
+        font-size: 25px;
+    }
+    .carpartfr {
+        margin: 0 17px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #authortext p {
+        font-size: 20px;
+    }
+    .contentmb {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .icc {
+        margin-bottom: 20px;
+    }
+    #foologo {
+        margin-bottom: 40px;
+    }
+    #copyright p {
+        font-size: 15px;
+    }
+    #txt1 {
+        margin-bottom: 30px;
+    }
+    #othcar {
+        margin-bottom: 60px;
+    }
+    #amginf img {
+        margin-left: 30%;
+    }
+    .imgimg img {
+        margin-left: 30%;
+        margin-bottom: 30px;
+    }
+    #authorimg img {
+        margin-left: 30%;
+        margin-bottom: 40px;
+    }
+    #abtauthor {
+        margin-left: 30%;
+    }
+    .matfoolg img {
+        margin-left: 30%;
+    }
+    .matfoolg h5 {
+        margin-left: 30%;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    #navpartnav a {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    #mblogo h2 {
+        font-size: 35px;
+    }
+    #txt2 {
+        margin-bottom: 30px;
+    }
+    #foologo {
+        margin-bottom: 40px;
+    }
+    #fooveh {
+        margin-bottom: 40px;
+    }
+    #foolink {
+        margin-bottom: 40px;
+    }
+    #foocon {
+        margin-bottom: 40px;
+    }
+    #foosoc {
+        margin-top: 30px;
+    }
+    #othbrb {
+        margin-bottom: 60px;
+    }
+    #amgbrb img {
+        margin-left: 30%;
+    }
+    #amginf1 img {
+        margin-left: 30%;
+    }
+    #brblg {
+        margin-bottom: 60px;
+    }
+    #aboutbrb p {
+        font-size: 20px;
+    }
+    #location iframe {
+        width: 500px;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 670px){
+    #navit a {
+        font-size: 1px;
+    }
+    #brbaltxt {
+        font-size: 25px;
+    }
+    .amgsec {
+        margin-top: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    #matfoolg {
+        margin-left: 190px;
+        margin-bottom: 20px;
+    }
+    .mbstop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 586px){
+    #navit a {
+        font-size: 13px;
+    }
+    #firstbox {
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #navlg1{
+        margin-left: 40%;
+    }
+    #mblogo {
+        margin-left: 25%;
+    }
+    #matlg {
+        margin-left: 25%;
+    }
+    #abouttext p {
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    .social p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #foologo h4{
+        font-size: 18px;
+    }
+    #foologo {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #fooveh {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #foolink {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #foocon {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    #row {
+        width: 90%;
+    }
+    #whymbtext h3 {
+        margin-left: 20%;
+    }
+    #whymbtext p {
+        margin-left: 20%;
+        
+    }
+    .classitem {
+        margin-left: 20%;
+    }
+    .amgttx img {
+        margin-left: 30%;
+    }
+    .amgttx h3 {
+        margin-left: 10%;
+    }
+    .amgttx p {
+        margin-left: 10%;
+    }
+    #aboutbrb {
+        display: none;
+    }
+    .brabustext h3 {
+        margin-left: 30%;
+    }
+    .brabustext p {
+        margin-left: 20%;
+        
+    }
+    #moremodels {
+        display: none;
+    }
+    #location iframe {
+        width: 400px;
+    }
+    .row1 {
+        margin-left: 10%;
+    }
+    #authortext p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 519px){
+    #navpartnav a {
+        font-size: 10px;
+    }
+    #whymbtext h3 {
+        font-size: 20px;
+    }
+    #whymbtext p {
+        font-size: 15px;
+        
+    }
+    #othcar img {
+        margin-left: 20%;
+    }
+    .amgttx img {
+        margin-left: 25%;
+    }
+    .amgttx h3 {
+        margin-left: 20%;
+    }
+    .amgttx p {
+        margin-left: 20%;
+    }
+    .brabustext p {
+        margin-left: 30%;
+        
+    }
+    #location iframe {
+        width: 320px;
+        height: 350px;
+    }
+    #contactsocial {
+        display: none;
+    }
+    #matfoolg {
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    #navpartnav ul {
+        display: block;
+    }
+    #navpartnav a {
+        margin: 0 40% 0 40%;
+        
+    }
+    #modal {
+        display: none;
+    }
+    #othcar img {
+        margin-left: 10%;
+    }
+    #othbrb img {
+        margin-left: 20%;
+    }
+    .amgttx img {
+        margin-left: 20px;
+    }
+    #brblg img {
+        margin-left: 15%;
+    }
+    .ccl {
+        font-size: 20px;
+    }
+    #location iframe {
+        width: 250px;
+        height: 280px;
+    }
+    #copyright p {
+        margin-bottom: 20px;
+        margin-left: 10%;
+        
+    }
+    #matfooic a {
+        margin-left: 30px;
+    }
+    #socauthor {
+        display: none;
+    }
+}
+
+
